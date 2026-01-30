@@ -8,8 +8,8 @@ public class Main {
     public Main(){
     }
     public static void main(String[] args) {
-       Main main = new Main();
-       main.loadLetters();
+        Main main = new Main();
+        main.loadLetters();
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         System.out.println("Welcome to jongle cube!");
@@ -38,13 +38,27 @@ public class Main {
         }
     }
     public void newGame(){
-        char[][] square1;
-        char[][] square2;
-        char[][] square3;
+        String[][] square1;
+        String[][] square2;
+        String[][] square3;
 
-        square1 = new char[5][5];
-        square2 = new char[5][5];
-        square3 = new char[5][5];
+        square1 = new String[5][5];
+        square2 = new String[5][5];
+        square3 = new String[5][5];
+
+        for (int x=1;x < 6; x++){
+            for (int y = 1; y < 6; y++)
+                if (x % 2 == 0){
+                    square1[x][y] = "|";
+                    square2[x][y] = "|";
+                    square3[x][y] = "|";
+                }
+        }
+        System.out.println(square1);
+        System.out.println();
+        System.out.println(square2);
+        System.out.println();
+        System.out.println(square3);
     }
     public void loadGame(){
 
