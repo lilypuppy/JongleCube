@@ -46,19 +46,6 @@ public class Main {
         square2 = new String[5][5];
         square3 = new String[5][5];
 
-        for (int x=1;x < 6; x++){
-            for (int y = 1; y < 6; y++)
-                if (x % 2 == 0){
-                    square1[x][y] = "|";
-                    square2[x][y] = "|";
-                    square3[x][y] = "|";
-                }
-        }
-        System.out.println(square1);
-        System.out.println();
-        System.out.println(square2);
-        System.out.println();
-        System.out.println(square3);
     }
     public void loadGame(){
 
